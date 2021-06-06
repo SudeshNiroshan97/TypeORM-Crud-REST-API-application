@@ -1,10 +1,12 @@
 import express from 'express'
 import morgan from 'morgan'
 import cors from 'cors'
+import {createConnection} from 'typeorm'
 
 import userRoutes from './routes/user.routes'
 
 const app = express()
+createConnection();
 
 //middlware
 app.use(cors());
