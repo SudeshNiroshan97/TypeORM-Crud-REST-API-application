@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-   "build": "tsc",
-   "start": "node dist/index.js"
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsc-watch --onSuccess \"node dist/index.js\""
   },
   "repository": {
     "type": "git",
@@ -31,6 +32,7 @@
     "@types/express": "^4.17.12",
     "@types/morgan": "^1.9.2",
     "@types/node": "^15.12.1",
+    "tsc-watch": "^4.4.0",
     "typescript": "^4.3.2"
   }
 }
